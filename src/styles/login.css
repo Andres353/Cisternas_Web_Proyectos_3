@@ -1,0 +1,83 @@
+/* Restablecer los márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegúrate de que el body y el html ocupen todo el alto */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fondo con la imagen */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../app/assets/cisternasbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+/* Estilos de la tarjeta de login */
+.login-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Título de la aplicación */
+.login-card h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Estilos de los campos de entrada */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.login-card input::placeholder {
+  color: #bbb;
+}
+
+/* Estilos del botón de login */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff416c;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #ff4b2b;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #ff4b2b;
+  margin-bottom: 10px;
+}
