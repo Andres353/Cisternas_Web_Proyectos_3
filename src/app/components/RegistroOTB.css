@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General container styles */
 .registro-page * {
     margin: 0;
@@ -204,3 +205,193 @@ label[for="horaFin"] {
     margin-top: 10px;
     text-align: left;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #000; /* Texto en negro para mayor contraste */
+}
+
+/* Estilos para el body para que cubra toda la ventana con la imagen de fondo */
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/img3.jpg') no-repeat center center fixed; /* Imagen de fondo para el registro */
+    background-size: cover; /* Imagen de fondo cubriendo toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Asegúrate de que el contenedor ocupe todo el espacio */
+.full-page-container {
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Disposición vertical */
+    justify-content: flex-start; /* Alineación en el inicio */
+    align-items: center; /* Centrar horizontalmente */
+    overflow: auto; /* Permitir desplazamiento si es necesario */
+}
+
+
+/* Estilos para el contenedor del registro */
+.register-container {
+    height: auto; /* Cambiado para que el contenedor se ajuste al contenido */
+    display: flex;
+    justify-content: center; /* Centrado horizontalmente en el eje principal */
+    align-items: center; /* Centrado verticalmente en el eje transversal */
+    padding: 20px; /* Padding general */
+    width: 140%; /* Ajustado al 140% para el contenedor */
+    max-width: 800px; /* Máximo ancho para el contenedor */
+    margin: 0 auto; /* Centrado horizontalmente */
+    position: relative; /* Permitir centrar con un margen negativo */
+    left: -20%; /* Ajustar para compensar el 140% */
+}
+
+
+.register-card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 40px 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    text-align: center;
+}
+
+.register-card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00796b; /* Verde oscuro */
+}
+  
+.register-card input,
+.register-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes redondeados en los inputs */
+    font-size: 16px;
+}
+  
+.register-card button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #00acc1, #ab47bc); /* Degradado atractivo */
+    color: #fff;
+    border: none;
+    border-radius: 30px; /* Botón con bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.register-card button:hover {
+    background-color: #00796b; /* Cambiar color al pasar el cursor */
+}
+  
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    border: 4px solid #e57373; /* Bordes en rojo claro */
+    box-shadow: 0px 0px 50px rgba(186, 104, 200, 0.4); /* Sombra morada sutil */
+    padding: 25px;
+    margin: 0 auto; /* Centrar el contenedor */
+    background: linear-gradient(135deg, #f8bbd0, #d1c4e9, #b3e5fc); /* Degradado en el fondo del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px; /* Bordes más redondeados */
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    color: #ab47bc; /* Título en morado oscuro */
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para mayor impacto */
+}
+
+.inp {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin-bottom: 18px; /* Espacio adicional entre campos */
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ab47bc; /* Borde en morado oscuro */
+    border-radius: 10px; /* Bordes más suaves */
+    font-size: 17px;
+    color: #00796b; /* Texto en verde oscuro */
+    background-color: #f3e5f5; /* Fondo suave para inputs */
+    outline: none;
+}
+
+textarea.input {
+    resize: vertical; /* Permitir solo redimensionar verticalmente */
+}
+
+.submit {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+    padding: 12px 0;
+    font-size: 21px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ec407a, #42a5f5, #ab47bc); /* Degradado de rosa a morado y celeste */
+    color: #fff;
+    border: none;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+.submit:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+.inp i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d32f2f; /* Color rojo para iconos */
+}
+
+/* Media queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .register-container {
+        padding: 20px; /* Aumentar el padding para pantallas más pequeñas */
+        width: 90%; /* Ajustar al 90% para pantallas pequeñas */
+    }
+
+    .title {
+        font-size: 30px; /* Tamaño de texto menor en pantallas pequeñas */
+    }
+
+    .inp {
+        max-width: 100%; /* Hacer que los campos ocupen todo el ancho disponible */
+    }
+
+    .submit {
+        max-width: 100%; /* Botón ocupa el 100% del ancho */
+    }
+}
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16

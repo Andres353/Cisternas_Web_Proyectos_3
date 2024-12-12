@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 .login-page * {
+=======
+/* Restablecer los márgenes y paddings */
+* {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Asegúrate de que el body y el html ocupen todo el alto */
+<<<<<<< HEAD
 .login-page html, .login-page body {
+=======
+html, body {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   height: 100%;
   margin: 0;
   padding: 0;
@@ -15,7 +24,11 @@
 }
 
 /* Fondo con la imagen */
+<<<<<<< HEAD
 .login-page .login-container {
+=======
+.login-container {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,7 +39,11 @@
 }
 
 /* Estilos de la tarjeta de login */
+<<<<<<< HEAD
 .login-page .login-card {
+=======
+.login-card {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   background: rgba(0, 0, 0, 0.8); /* Fondo un poco más oscuro */
   padding: 40px; /* Más espacio interno */
   border-radius: 12px;
@@ -38,7 +55,11 @@
 }
 
 /* Título de la aplicación */
+<<<<<<< HEAD
 .login-page .login-card h2 {
+=======
+.login-card h2 {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   font-size: 40px; /* Aumenta el tamaño */
   margin-bottom: 25px;
   color: #ff416c; /* Usa el color del botón */
@@ -46,7 +67,11 @@
 }
 
 /* Estilos de los campos de entrada */
+<<<<<<< HEAD
 .login-page .login-card input {
+=======
+.login-card input {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   width: 100%;
   padding: 15px;
   margin-bottom: 25px;
@@ -59,23 +84,41 @@
 }
 
 /* Estilos del logo */
+<<<<<<< HEAD
 .login-page .login-logo {
   width: 500px; /* Tamaño más grande */
+=======
+.login-logo {
+  width: 280px; /* Tamaño más grande */
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   margin-bottom: 25px; /* Ajusta el espacio debajo del logo */
   border-radius: 15px; /* Puntas redondeadas */
 }
 
+<<<<<<< HEAD
 .login-page .login-card input::placeholder {
   color: #ddd; /* Placeholder más claro */
 }
 
 .login-page .login-card input:focus {
+=======
+
+.login-card input::placeholder {
+  color: #ddd; /* Placeholder más claro */
+}
+
+.login-card input:focus {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   background: rgba(255, 255, 255, 0.2); /* Cambia el fondo al hacer focus */
   outline: none;
 }
 
 /* Estilos del botón de login */
+<<<<<<< HEAD
 .login-page .login-btn {
+=======
+.login-btn {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   width: 100%;
   padding: 15px;
   background: linear-gradient(to right, #ff416c, #ff4b2b); /* Degradado lineal */
@@ -87,18 +130,30 @@
   transition: background-color 0.4s ease;
 }
 
+<<<<<<< HEAD
 .login-page .login-btn:hover {
+=======
+.login-btn:hover {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   background-color: #ff4b2b;
 }
 
 /* Mensaje de error */
+<<<<<<< HEAD
 .login-page .error-message {
+=======
+.error-message {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   color: #ff4b2b;
   margin-bottom: 15px;
   font-weight: bold; /* Hace más destacable el mensaje */
 }
 
 /* Aumenta el espacio entre los elementos */
+<<<<<<< HEAD
 .login-page .login-card input, .login-page .login-btn {
+=======
+.login-card input, .login-btn {
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   margin-bottom: 20px;
 }

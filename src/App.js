@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import './app/components/home/topbar.css';
@@ -49,6 +50,23 @@ function App() {
         </Routes>
       </Router>
     </AuthProvider>
+=======
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserRegistration from './app/pages/registroOTB.js';
+import Prueba from './app/pages/prueba.js';
+import Show from './app/pages/listSchedule.js'; // Asegúrate de importar Show
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/registroOTB" element={<UserRegistration />} />
+        <Route path="/prueba" element={<Prueba />} />
+        <Route path="/listSchedules" element={<Show />} /> {/* Cambia "Show" a "show" si tu ruta es en minúsculas */}
+      </Routes>
+    </Router>
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
   );
 }
 

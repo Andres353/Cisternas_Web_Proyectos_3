@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Contenedor principal con fondo */
 .list-schedules-container {
   width: 100vw;
@@ -151,3 +152,125 @@
       padding: 6px 10px;
   }
 }
+=======
+/* Restablecer los márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h2 {
+    color: white; /* Color del título */
+}
+
+  /* Asegúrate de que el body y el html ocupen todo el alto */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea al inicio en el eje vertical */
+    background: url('../assets/img3.jpg') no-repeat center center fixed; /* Fondo con imagen */
+    background-size: cover;
+    padding-top: 20px; /* Espacio desde la parte superior */
+  }
+  
+  
+  /* Estilos de la tarjeta de productos */
+  .row {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la tarjeta */
+    padding: 50px; /* Espacio interno */
+    border-radius: 12px; /* Esquinas redondeadas */
+    text-align: center; /* Centrado del texto */
+    color: white; /* Color del texto */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra */
+    max-width: 600px; /* Tamaño máximo de la tarjeta */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+}
+
+  .btn-update {
+    background-color: #098ecc; /* Color del botón de actualización */
+    color: white; /* Color del texto */
+    padding: 10px 10px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+}
+
+.btn-update:hover {
+    background-color: #a90ad1; /* Color al pasar el mouse */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Color del botón de eliminación */
+    color: white; /* Color del texto */
+    padding: 10px 10px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+}
+
+.btn-delete:hover {
+    background-color: #db0a61; /* Color al pasar el mouse */
+}
+
+  /* Estilo del botón de crear */
+  .btn-secondary {
+    background-color: #ff416c; /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ff4b2b; /* Color al pasar el mouse */
+  }
+  
+  /* Estilos de la tabla */
+  .table {
+    width: 100%; /* Asegura que la tabla ocupe el 100% */
+    margin-top: 20px; /* Espacio superior */
+    border-collapse: collapse; /* Colapsar bordes */
+  }
+  
+  /* Estilos de los encabezados de la tabla */
+  .table thead {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo de encabezados */
+  }
+  
+  .table th, .table td {
+    padding: 15px; /* Espacio interno */
+    text-align: center; /* Centrado del texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea inferior */
+  }
+  
+  /* Estilo de las filas de la tabla al pasar el mouse */
+  .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el mouse */
+  }
+  
+  /* Mensaje de error (opcional) */
+  .error-message {
+    color: #ff4b2b; /* Color del mensaje de error */
+    margin-bottom: 15px;
+    font-weight: bold; /* Destacar el mensaje */
+  }
+
+  
+  
+>>>>>>> 81e7b92582a1359c7bfc6326b1485e3f9c48aa16
