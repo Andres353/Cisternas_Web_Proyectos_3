@@ -1,0 +1,204 @@
+/* General reset */
+.complaints-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper principal */
+.complaints-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../../assets/imagenCristo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+/* Contenedor de las quejas */
+.complaints-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 550px;
+    overflow-y: auto;
+    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Título */
+.complaints-container h2 {
+    font-size: 1.8rem;
+    color: #ff416c;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Lista de quejas */
+.complaints-list {
+    list-style: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+
+.complaint-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    color: white;
+}
+
+.complaints-list-items {
+    max-height: 400px; /* Ajusta este valor según lo que prefieras */
+    overflow-y: auto;  /* Esto habilita el desplazamiento vertical */
+    padding-right: 15px; /* Para evitar que el contenido se oculte tras la barra de desplazamiento */
+}
+
+/* Alineación para todo el contenedor */
+.app-wrapper {
+    display: flex;
+}
+
+/* Ajustes del contenedor de quejas */
+.complaints-wrapper {
+    margin-left: 250px; /* Alinea el contenido a la izquierda, empujado por el sidebar */
+    flex: 1;
+    padding: 20px;
+}
+
+/* Panel de notificaciones */
+.notifications-panel,
+.complaints-container {
+    margin-left: -510px; /* Ajusta el margen si es necesario */
+}
+
+/* Estilos para el último elemento de la lista */
+.complaint-item:last-child {
+    border-bottom: none;
+}
+
+/* Destacar texto importante dentro de la queja */
+.complaint-item strong {
+    color: #ff416c;
+}
+
+/* Panel de notificaciones */
+.notifications-panel {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.otb-notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Estilos de los botones */
+.otb-button {
+    background-color: #c44205;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.otb-button:hover {
+    background-color: #ff4b2b;
+}
+
+/* Estilos responsivos */
+
+/* Para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    .complaints-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    }
+
+    .complaints-container,
+    .notifications-panel {
+        width: 90%;
+        max-width: 90%;
+        margin-left: 0;
+    }
+
+    .complaints-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .otb-button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    /* Cambiar el tamaño de la lista de quejas y panel de notificaciones en pantallas pequeñas */
+    .complaints-list {
+        padding: 10px;
+    }
+
+    .complaints-list-items {
+        max-height: 350px; /* Ajusta el valor para una mejor visualización */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .complaints-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .otb-button {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    .complaints-list {
+        padding: 10px;
+    }
+
+    .complaints-list-items {
+        max-height: 300px; /* Ajuste para pantallas móviles */
+    }
+
+    .complaint-item {
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .notifications-panel,
+    .complaints-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .otb-button {
+        font-size: 0.9rem;
+    }
+}
+

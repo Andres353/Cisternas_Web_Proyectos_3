@@ -1,0 +1,153 @@
+/* Contenedor principal con fondo */
+.list-schedules-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/img1.jpg'); /* Ruta a tu imagen en assets */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+/* Contenedor interno */
+.list-schedules-container .container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #2a2a3b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.list-schedules-container .container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Título */
+.list-schedules-container h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Subtítulo opcional para un estilo similar al ejemplo */
+.list-schedules-container .subtitle {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #b3b3b3;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Estilos de la tabla */
+.list-schedules-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.list-schedules-container thead {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+.list-schedules-container th, 
+.list-schedules-container td {
+  padding: 15px;
+  text-align: center;
+  color: #cfcfcf;
+  border-bottom: 1px solid #333;
+  font-size: 1em;
+}
+
+.list-schedules-container tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo de botones */
+.list-schedules-container .btn {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-radius: 8px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 5px;
+}
+
+.list-schedules-container .btn-secondary {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.list-schedules-container .btn-primary {
+  background-color: #4a4ae2;
+}
+
+.list-schedules-container .btn-danger {
+  background-color: #dc3545;
+}
+
+.list-schedules-container .btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.list-schedules-container .btn:active {
+  transform: scale(0.95);
+}
+
+/* Encabezados de la tabla */
+.list-schedules-container thead th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .list-schedules-container .container {
+      padding: 20px;
+  }
+
+  .list-schedules-container h2 {
+      font-size: 1.5em;
+  }
+
+  .list-schedules-container .btn {
+      font-size: 0.85em;
+      padding: 8px 12px;
+  }
+
+  .list-schedules-container table {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-schedules-container h2 {
+      font-size: 1.3em;
+  }
+
+  .list-schedules-container th, 
+  .list-schedules-container td {
+      padding: 10px;
+  }
+
+  .list-schedules-container .btn {
+      font-size: 0.8em;
+      padding: 6px 10px;
+  }
+}

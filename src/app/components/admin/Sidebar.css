@@ -1,0 +1,128 @@
+/* Contenedor principal */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('../../assets/imagenCristo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transiciones para tamaño y visibilidad */
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%); /* Ocultar sidebar fuera de la pantalla */
+}
+
+/* Logo */
+.sidebar .logo h2 {
+  color: #00cc99;
+}
+
+/* Menú de navegación */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px 0;
+  color: #bfbfbf;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li.active {
+  color: #00cc99;
+}
+
+.sidebar nav ul li span {
+  margin-left: 10px;
+}
+
+/* Responsividad: ocultar textos en pantallas pequeñas */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Sidebar reducido a solo íconos */
+  }
+
+  .sidebar .logo h2,
+  .sidebar nav ul li span {
+    display: none; /* Ocultar textos */
+  }
+
+  .sidebar nav ul li {
+    justify-content: center;
+  }
+
+  .sidebar nav ul li i {
+    font-size: 20px;
+    color: #bfbfbf;
+  }
+
+  .sidebar nav ul li.active i {
+    color: #00cc99;
+  }
+}
+
+/* Responsividad: ocultar sidebar en pantallas muy pequeñas */
+@media (max-width: 576px) {
+  .sidebar {
+    transform: translateX(-100%); /* Mover el sidebar fuera de la pantalla */
+  }
+
+  .dashboard-container.has-sidebar .main-content {
+    margin-left: 0; /* El contenido ocupa toda la pantalla */
+  }
+}
+
+/* Mostrar sidebar al hacer hover en pantallas pequeñas */
+.sidebar:hover {
+  width: 250px; /* Expandir sidebar al pasar el mouse */
+  transform: translateX(0); /* Asegurarse de que sea visible */
+}
+
+/* Botón de hamburguesa */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #00cc99;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none; /* Ocultar el botón en pantallas grandes */
+}
+
+.hamburger i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Mostrar botón de hamburguesa en pantallas pequeñas */
+@media (max-width: 576px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Contenido principal */
+.dashboard-container.has-sidebar .main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+}
